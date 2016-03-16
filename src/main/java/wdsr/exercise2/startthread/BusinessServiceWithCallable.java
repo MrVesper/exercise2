@@ -41,7 +41,7 @@ public class BusinessServiceWithCallable {
 				@Override
 				public Integer call() throws Exception {
 					// TODO Auto-generated method stub
-					return generator.nextInt((Integer.MAX_VALUE - 0)+1)+0;
+					return helper.nextRandom();
 				}
 			});
 		}
