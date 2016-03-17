@@ -16,7 +16,7 @@ import wdsr.exercise2.procon.OrderProducerModule.OrderProducerHelper;
 
 public class ProducerConsumerTest {
 
-	@Test(timeout=120000)
+	@Test(timeout=20000)
 	public void testBufferManualImpl() throws InterruptedException {
 		// given
 		Buffer buffer = new BufferManualImpl();
