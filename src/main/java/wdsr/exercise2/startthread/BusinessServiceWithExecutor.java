@@ -11,7 +11,6 @@ public class BusinessServiceWithExecutor {
 		this.helper = helper;
 		this.executorService = Executors.newSingleThreadExecutor();
 	}
-
 	/**
 	 * Calculates Fibonacci number asynchronously and invokes the callback when result is available.
 	 * This method returns immediately. 
@@ -19,8 +18,6 @@ public class BusinessServiceWithExecutor {
 	 * @param callback Callback to be invoked when Fibonacci number is found.
 	 */
 	public void computeFibonacci(int n, FibonacciCallback callback) {
-		// TODO Task: execute the logic below using java.util.concurrent.ExecutorService
-		// The ExecutorService should be declared as a field, not a local variable.
 		executorService.execute(new Runnable() {
 		    public void run() {
 				long value = helper.findFibonacciValue(n);
