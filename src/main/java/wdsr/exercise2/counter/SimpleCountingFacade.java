@@ -2,7 +2,6 @@ package wdsr.exercise2.counter;
 
 /**
  * Created by Marek on 05.03.2016.
- * 
  * Task: use 'synchronized' keyword in this file to make SimpleCountingFacadeTest pass.
  */
 public class SimpleCountingFacade implements CountingFacade {
